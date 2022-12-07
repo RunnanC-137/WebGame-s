@@ -1,0 +1,6 @@
+[submodule "jogo_memoria"]
+	path = memoria
+	url = https://github.com/RunnanC-137/Memory_Game.git
+[submodule "jogo_da_velha"]
+	path = jogo_da_velha
+	url = https://github.com/RunnanC-137/Jogo_da_velha.git
