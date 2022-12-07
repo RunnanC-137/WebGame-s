@@ -1,0 +1,85 @@
+.jogador, .title, .square {
+    margin: 15px;
+}
+
+.stage {
+    display: none;
+    grid-template: auto auto auto/ auto auto auto;
+    gap: 4px
+}
+
+.square {
+
+    width: 100px;
+    margin: 0;
+    height: 100px;
+    background-color: bisque;
+    border: 1.5px solid gray;
+    box-sizing: border-box;
+}
+
+.o, .x {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.x::after, .o::after {
+
+    position: absolute;
+    
+    font-size: 50px;
+    line-height: 100px;
+    content: "\274C";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.o::after {
+    content: "\2B55";
+}
+
+.x::after {
+    content: "\274C";
+}
+
+.modo-de-jogo, .singleplayer, .multiplayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modo-de-jogo {
+    justify-content: space-around;
+
+    width: 520px;
+    height: 500px;
+    margin-top: 100px;
+    background-color: #d9d5bb;
+
+    font-size: 24pt;
+    font-weight: lighter;
+
+    border-radius: 10px;
+}
+.singleplayer, .multiplayer {
+    
+
+    width: 200px;
+    height: 90px;
+    background-color: #b05574;
+    color: whitesmoke;
+    transition: all .5s;
+    border-radius: 15pt;
+    cursor: pointer;
+}
+
+.singleplayer:hover, .multiplayer:hover {
+    color: #b05574;
+    background-color: whitesmoke;
+}

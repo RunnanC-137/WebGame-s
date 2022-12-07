@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/efects.css">
+    <link rel="stylesheet" href="styles/config.css">
+    <title>Jogo da velha</title>
+</head>
+<body>
+    <div class="modo-de-jogo">
+        <div class="singleplayer" onclick="singlePlayer()">Single Player</div>
+        <div class="multiplayer" onclick="selectGame()">Multi Player</div>
+    </div>
+    <h1 class="title" style="display: none;">Jogo da velha</h1>
+    <div class="stage">
+    </div>
+    <h1 class="jogador" style="display: none;">Player &#x2B55</h1>
+
+    <div class="botoes">
+        <button class="butao" onclick="reset()">Recomeçar</button>
+        <button class="butao" onclick="location.reload()">Trocar modo de jogo</button>
+    </div>
+        
+    <div class="teste"></div>
+
+    <script src="scripts/sript.js"></script>
+    <script src="scripts/before.js"></script>
+</body>
+</html>
